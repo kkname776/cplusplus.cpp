@@ -1,12 +1,21 @@
-#include <iostream>  
-using namespace std;  
-int main()  
-{  
-int a=5, b=10;      
-cout<<"Before swap a= "<<a<<" b= "<<b<<endl;      
-a=a*b; //a=50 (5*10)    
-b=a/b; //b=5 (50/10)    
-a=a/b; //a=10 (50/5)    
-cout<<"After swap a= "<<a<<" b= "<<b<<endl;      
-return 0;  
-}  
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int a, b;
+
+   cout<<"Enter two integers to swap\n";
+   cout<<"Enter a= ";
+   cin>>a;
+   cout<<"Enter b= ";
+   cin>>b;
+
+   a = a + b;   \\ ex. a=5,b=6  so,  here a = 5+6 = 11
+   b = a - b;   \\  b= a-b i.e. b = 11-6 = 5
+   a = a - b;   \\  a= a-b i.e. a = 11-5 = 6
+
+   cout<<"\nAfter Swapping\n";
+   cout<<"a = "<<a<<"\nb = "<<b;
+   return 0;
+}
