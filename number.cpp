@@ -1,12 +1,22 @@
+// C++ program to add two number
+// using addition operator
 #include <iostream>
 using namespace std;
+// Function to return sum
+// of two number
+int addTwoNumber(int A, int B)
+{
+	// Return sum of A and B
+	return A + B;
+}
 
-int main() {    
-    int number;
+// Driver Code
+int main()
+{
+	// Given two number
+	int A = 4, B = 11;
 
-    cout << "Enter an integer: ";
-    cin >> number;
-
-    cout << "You entered " << number;    
-    return 0;
+	// Function call
+	cout << "sum = " << addTwoNumber(A, B);
+	return 0;
 }
